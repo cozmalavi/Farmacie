@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7547DFF9-3179-43D2-8E74-39F38E6CDA0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Farmacie_Interfata</RootNamespace>
+    <AssemblyName>Farmacie_Interfata</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <LangVersion>8.0</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\proiect\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\proiect\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\proiect\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adaugare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adaugare.Designer.cs">
+      <DependentUpon>Adaugare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Angajat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Angajat.Designer.cs">
+      <DependentUpon>Angajat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cautare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cautare.Designer.cs">
+      <DependentUpon>Cautare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientCauta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientCauta.Designer.cs">
+      <DependentUpon>ClientCauta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientCos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientCos.Designer.cs">
+      <DependentUpon>ClientCos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModificaProdusCos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientModificaProdusCos.Designer.cs">
+      <DependentUpon>ClientModificaProdusCos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificare.Designer.cs">
+      <DependentUpon>Modificare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StocareFactory.cs" />
+    <EmbeddedResource Include="Adaugare.resx">
+      <DependentUpon>Adaugare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Angajat.resx">
+      <DependentUpon>Angajat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cautare.resx">
+      <DependentUpon>Cautare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientCauta.resx">
+      <DependentUpon>ClientCauta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientCos.resx">
+      <DependentUpon>ClientCos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientModificaProdusCos.resx">
+      <DependentUpon>ClientModificaProdusCos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificare.resx">
+      <DependentUpon>Modificare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FarmacieModele\FarmacieModele.csproj">
+      <Project>{f764d2d5-6aa8-4837-bea0-dcc91d6720ea}</Project>
+      <Name>FarmacieModele</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
